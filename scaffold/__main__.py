@@ -21,8 +21,9 @@ def main():
     try:
         projectfolders.create_folders(args.project[0], cur_dir) #Creates all of the project folders we need
         projectfiles.create_files(args.project[0], cur_dir) #Creates all of the project files we need
-    except IOError as (errno, strerror):
-        print strerror
+    except IOError as xxx_todo_changeme:
+        (errno, strerror) = xxx_todo_changeme.args
+        print(strerror)
 
 if __name__ == "__main__":
     main()
